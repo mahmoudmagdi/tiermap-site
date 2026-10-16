@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – Tiermap</title>
+<meta name="description" content="Tiermap: localize your App Store and Google Play prices by country tiers, with PPP presets and a preview of every change.">
+<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="bar"><div class="wrap">
+  <a class="brand" href="../"><img src="../assets/icon.png" alt="">Tiermap</a>
+  <nav><a href="../">Home</a><a href="../support/" aria-current="page">Support</a><a href="../privacy/">Privacy</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero compact">
+  <img src="../assets/chameleon-pricetag.png" alt="">
+  <div><h1>Support</h1><p>Questions, bugs or ideas? We're here to help.</p><a class="button" href="https://github.com/mahmoudmagdi/tiermap-site/issues/new">Open an issue</a></div>
+</section>
+
+<p>The fastest way to get help is to <a href="https://github.com/mahmoudmagdi/tiermap-site/issues/new">open an issue on GitHub</a>. Please include your macOS version, the Tiermap version (Tiermap → About Tiermap) and what you expected to happen. Never paste API keys or other secrets.</p>
+
+<h2>Connect App Store Connect</h2>
+<ol class="steps">
+  <li>Create a key in App Store Connect → Users and Access → Integrations → App Store Connect API. It needs the <strong>App Manager</strong> or <strong>Admin</strong> role to change prices.</li>
+  <li>Enter the Issuer ID and Key ID.</li>
+  <li>Paste the contents of your <code>AuthKey_XXXXXXXXXX.p8</code> file, or choose the file.</li>
+  <li>Click <strong>Validate &amp; Save</strong>. The key is stored only in your Keychain.</li>
+</ol>
+
+<h2>Connect Google Play</h2>
+<ol class="steps">
+  <li>In Google Cloud, enable the <strong>Google Play Android Developer API</strong> and the <strong>Google Play Developer Reporting API</strong>.</li>
+  <li>Create a service account, then Keys → Add key → JSON, and download the file.</li>
+  <li>In Play Console → Users and permissions, invite the service account's e-mail with access to your apps, <strong>View financial data</strong> and <strong>Manage store presence</strong>.</li>
+  <li>In Tiermap, click <strong>Choose JSON Key…</strong>. The key is stored only in your Keychain.</li>
+</ol>
+
+<h2>Common questions</h2>
+<h3>Can I try Tiermap without my keys?</h3>
+<p>Yes. Choose <strong>Try with Sample Data</strong> on the first screen (or Help → Explore Sample Data). Nothing is sent to App Store Connect or Google Play.</p>
+<h3>What does Tiermap Pro add?</h3>
+<p>Browsing, tiers, previews, exports and History are free. Tiermap Pro lets you send changes to the stores: monthly, yearly (with a 7-day free trial) or a one-time lifetime purchase.</p>
+<h3>How do I restore or cancel Tiermap Pro?</h3>
+<p>Use <strong>Restore Purchases</strong> in the paywall or in Settings → Tiermap Pro. Subscriptions are managed in your <a href="https://apps.apple.com/account/subscriptions">App Store account settings</a>; they renew automatically unless cancelled at least 24 hours before the end of the period.</p>
+<h3>Where is my data?</h3>
+<p>API keys are in your Mac's Keychain; tiers, targets, links and History are in the app's container on your Mac. See the <a href="../privacy/">privacy policy</a>.</p>
+</main>
+<footer class="wrap">
+  <p>© 2026 Mahmoud ElKhlafawi · <a href="../privacy/">Privacy Policy</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use (Apple standard EULA)</a> · <a href="../support/">Support</a></p>
+  <p>App Store Connect is a trademark of Apple Inc. Google Play is a trademark of Google LLC. Tiermap is not affiliated with Apple or Google.</p>
+</footer>
+</body>
+</html>
